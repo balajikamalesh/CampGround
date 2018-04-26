@@ -22,7 +22,8 @@ var Comment       = require("./models/comment");
 var seedDB = require("./seeds");
 //seedDB();
 
-mongoose.connect("mongodb://localhost/YelpCamp_Deployed",{useMongoClient: true});
+// mongoose.connect("mongodb://localhost/YelpCamp_Deployed",{useMongoClient: true});
+mongoose.connect("mongodb://balaji:balaji@ds159509.mlab.com:59509/yelpcamp",{useMongoClient: true});
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.urlencoded({extended: true}));
