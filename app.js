@@ -65,5 +65,5 @@ passport.deserializeUser(User.deserializeUser());
     
 
 app.listen(process.env.PORT,process.env.IP,function(){
-    console.log("YelpCamp server started!!!!!");
+    console.log("CampGround server started!!!!!");
 })
